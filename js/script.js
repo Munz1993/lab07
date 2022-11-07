@@ -1,6 +1,8 @@
 function init(){
   function myEventFunction (){
-    var a = document.getElementById('entryinput');
+    //declaring global variable a to be used by other functions as well
+    a = document.getElementById('entryinput');
+    //creating local variables
     var b = "Munawar Ali: ";
     var c = b+a.value;
     alert(c);
@@ -9,7 +11,7 @@ function init(){
   d1.addEventListener('click', myEventFunction);	 
   d1.addEventListener('click', function(){
     var d2 = document.getElementById('textoutput');
-    d2.innerHTML = fc.value;
+    d2.innerHTML = a.value;
   });
 };
 window.addEventListener('load', init);
