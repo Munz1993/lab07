@@ -11,5 +11,5 @@ function init(){
     var d2 = document.getElementById('textoutput');
     d2.innerHTML = fc.value;
   });
-}
+};
 window.addEventListener('load', init);
